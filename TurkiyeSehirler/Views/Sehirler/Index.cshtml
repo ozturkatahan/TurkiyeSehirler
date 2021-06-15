@@ -1,0 +1,18 @@
+﻿@model Bolgeler
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Index</h2>
+
+<div class="dropdown show">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Bölgeler
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        @Html.DropDownList("BolgeAd", null, "Bölge Seç", new { @class = "form-control" })
+    </div>
+</div>
